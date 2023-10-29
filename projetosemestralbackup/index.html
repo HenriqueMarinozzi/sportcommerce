@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/fontawesome-free-web/css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8" />
+    <script defer src="js/index.js"></script>
+    <title>Sport</title>
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <label class="logomarca"> <img src="img/logo.png" alt="150" width="150" /> </label>
+      <input id="buscar" class="buscar" name="buscar" type="text" placeholder="Buscar Produto" onkeyup="barraDePesquisa()" />
+      <i class="fa-solid fa-bars menu-hamburguer" onclick="toggleMenu()"></i>
+      <menu id="itens" class="menu-itens">
+        <ul>
+          <li>
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i> 0 Carrinho</a>
+          </li>
+          <li>
+            <a href="forma-pagamento.html"><i class="fa-solid fa-money-bill"></i> Finalizar compra</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+
+    <div id="produtos"></div>
+  </body>
+</html>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("itens");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>

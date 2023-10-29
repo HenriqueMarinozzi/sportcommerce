@@ -1,0 +1,145 @@
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
+  background-color: #eaeaea;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  background-color: rgb(115, 168, 177);
+  margin: 20px;
+  display: inline-block;
+  align-content: space-between;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 120px;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+
+.card-imagem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+
+.card-nome {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(104, 113, 120, 1);
+  color: white;
+  font-size: 20px;
+}
+
+.card-preco {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(104, 113, 120, 1);
+  color: white;
+  font-size: 18px;
+}
+
+.card-botao {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.botao-comprar:hover {
+  background-color: rgb(204, 252, 200);
+}
+
+.botao-comprar {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgb(158, 221, 153);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: #215ca8;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: fixed;
+}
+
+.menu-hamburguer {
+  margin-left: auto;
+  margin-right: 100px;
+  font-size: 28px;
+}
+
+.menu-hamburguer:hover {
+  cursor: pointer;
+  color: rgb(0, 238, 255);
+}
+
+#produtos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logomarca {
+  margin-left: 60px;
+}
+
+.buscar {
+  margin-left: 50px;
+}
+
+/* Estilize o menu de itens do hambúrguer */
+.menu-itens {
+  display: none;
+  position: absolute;
+  background-color: #215ca8;
+  border: 1px solid #ccc;
+  top: 40px;
+  right: 0;
+  width: 350px;
+  color: white; /* Defina a cor do texto como branco */
+}
+
+.menu-itens ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-itens li {
+  margin: 10px;
+}
+
+/* Estilize o link do carrinho para tornar o ícone e o texto brancos */
+.menu-itens a {
+  text-decoration: none; /* Remova a decoração do link */
+  color: white; /* Defina a cor do texto como branco */
+}
+
+/* Estilize o ícone do carrinho para torná-lo branco */
+.menu-itens i.fa-cart-shopping {
+  color: white; /* Defina a cor do ícone como branco */
+}

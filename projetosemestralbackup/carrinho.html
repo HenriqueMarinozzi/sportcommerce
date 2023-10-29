@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/fontawesome-free-web/css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8" />
+    <script defer src="js/listacarrinho.js"></script>
+    <title>Meu Carrinho</title>
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <label class="logomarca"> <img src="img/logo.png" alt="150" width="150" /> </label>
+      <input id="buscar" class="buscar" name="buscar" type="text" placeholder="Buscar Produto" onkeyup="barraDePesquisa()" />
+      <i class="fa-solid fa-bars menu-hamburguer" onclick="toggleMenu()"></i>
+      <menu id="itens" class="menu-itens">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Página inicial</a>
+          </li>
+          <li>
+            <a href="forma-pagamento.html"><i class="fa-solid fa-money-bill"></i> Finalizar compra</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+    <div class="produtos">
+      <h1>Meu Carrinho</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço Unitário</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="carrinho-conteudo">
+          <!-- Os itens do carrinho serão exibidos aqui -->
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+  </body>
+</html>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("itens");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
